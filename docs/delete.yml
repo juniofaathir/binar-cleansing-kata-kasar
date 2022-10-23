@@ -1,0 +1,16 @@
+tags:
+  - name: Delete data(s)
+delete:
+  description: Deleting data(s) using specified ID
+parameters:
+  - name: id
+    in: path
+    required: true
+    type: string
+responses:
+    '200':
+      description: Successful response
+    '400':
+      description: Bad Request
+    '500':
+      description: Internal Server Error

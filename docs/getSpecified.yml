@@ -1,0 +1,16 @@
+tags:
+  - name: Read Specified
+get:
+  description: Get and show specified data
+parameters:
+  - name: id
+    in: path
+    required: true
+    type: string
+responses:
+    '200':
+      description: Successful response
+    '400':
+      description: Bad Request
+    '500':
+      description: Internal Server Error

@@ -1,0 +1,24 @@
+tags:
+  - name: Upload new tweet(s)
+consumes:
+- "application/json"
+produces:
+- "application/json"
+parameters:
+- in: body
+  name: "isi"
+  description: "Tulis disini tweet-nya"
+  required: "false"
+  schema:
+    type: object
+    properties:
+      tweet:
+        type: string
+        example: "xxx"
+responses:
+    '200':
+      description: Successful response
+    '400':
+      description: Bad Request
+    '500':
+      description: Internal Server Error
